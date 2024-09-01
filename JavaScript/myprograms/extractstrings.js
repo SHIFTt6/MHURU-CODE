@@ -8,7 +8,7 @@ console.log(str1.substring(2,7))
 
 // if length of cut isnt specified, we will get everything remaining in the string
 // substring -- start index and end of cut
-// REVERSING A STRING
+console.log("REVERSING A STRING")
  
 
 // A B C D E F G

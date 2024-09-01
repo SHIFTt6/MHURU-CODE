@@ -39,6 +39,5 @@ let b = true        // BOOLEAN
  let h = f + g
 
  console.log("h=",h)
- document.write(h)
 
 
