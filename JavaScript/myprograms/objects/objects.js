@@ -1,3 +1,11 @@
+/** let object1 = {
+         key1: value1,
+        key2: value2,
+        key3: value3
+}
+  key is the property name
+ */
+
 console.log("CREATING AN EMPTY OBJECT")
 // and adding propeties after creating an object a dot is used to add properties e.g obj.fistName
 
