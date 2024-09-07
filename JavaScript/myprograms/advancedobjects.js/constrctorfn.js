@@ -17,7 +17,7 @@ function Student (name, age, province, company){
 }
 
 const s1 = new Student("Tawana", 24, "Zimbabwe", "Delta")
-const s2 = new Student("Nyasha", 18, "Lesotho", "Maheu")
+let s2 = new Student("Nyasha", 18, "Lesotho", "Maheu")
 
 console.log(s1)
 console.log(s2)

@@ -27,6 +27,7 @@ let obj2 = {
             }
 
     console.log("The boy is",obj2.firstName)
+    console.log("object creation2",obj2)
 
 //CONCLUSION: both method outputs the same thing
 
@@ -43,4 +44,5 @@ let obj3 = {
 
     console.log(obj3.abc)   // output will be undefined coz a dot notation isnt used when we dont know the property
     console.log(obj3[abc])
+    console.log(obj3.age)
 // we say dot or put in square brackets is the property of an object

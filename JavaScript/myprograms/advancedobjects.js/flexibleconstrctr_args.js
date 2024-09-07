@@ -22,6 +22,7 @@ console.log("\nOR UPDATING THE PROPERTIES")
 
 // console.log(Person2.age = 24); or
 Person1.age = 24
+Person1.sex = "Male"
 console.log(Person1);
 
 
