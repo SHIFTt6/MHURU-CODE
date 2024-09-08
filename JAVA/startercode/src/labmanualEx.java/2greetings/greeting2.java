@@ -5,7 +5,7 @@ public class greeting2{
     
         printGreeting();
     }
-    static void printGreeting(){
+    public static void printGreeting(){
         System.out.println("Hello, welcome to Java!"); 
     }
 }    

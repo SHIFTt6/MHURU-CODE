@@ -14,7 +14,7 @@ console.log(b.__proto__.__proto__)      // trying to access null prototype using
 
     console.log("\nCHECKING TRUTH")
 
-    if (a.__proto__===b.__proto__.__proto__) {
+    if (a.__proto__=== b.__proto__.__proto__) {
         console.log("Same")
     } else{
         console.log("Aint Similar")         // now the statements shows us that they are the same
