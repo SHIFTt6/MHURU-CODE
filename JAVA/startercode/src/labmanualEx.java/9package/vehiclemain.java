@@ -1,10 +1,12 @@
-public class classnobj6 {
+
+public class vehiclemain {
+    
     String make;
     String model;
     int year;
 
     // Constructor
-    public classnobj6(String make, String model, int year) {
+    public vehiclemain(String make, String model, int year) {
         this.make = make;
         this.model = model;
         this.year = year;
@@ -16,6 +18,18 @@ public class classnobj6 {
         System.out.println("Model: " + model);
         System.out.println("Year: " + year);
     }
-}
+   vehicle mypack = new vehicle("Toyota", "Corolla", 2019);
 
+       
+}
+// javac -d. vehicle.java        used to create a package
+// javac  vehiclepack.java       used to compile
+
+
+
+
+    public static void main(String[] args) {
+
+    }
+    
 
