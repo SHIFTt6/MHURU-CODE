@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+    margin: 0px; /* This makes your body to reach corners of the screen that includes the header
+    since it is part of the body */
+}
+
+.logo {
+    height: 50px;
+
+}
+
+#header {
+    display: flex ;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding : 20px 20px;
+    box-shadow: 0 5px 15px rgb(70, 0, 0, 0.06);
+    height: 70px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+}
+
+/* Targeting the list inside the id = navbar  */
+#navbar li{                     
+    list-style: none;           /*Removing list bullets*/
+    padding: 30px;              /* space between elmemnts*/
+    position: relative;
+}
+
+/* Targeting the anchor tag*/
+#navbar li a{
+    color: rgb(3, 49, 53);
+    font-size: 25px;
+    font-weight: 500px;
+    text-decoration: none;      /*Remove undelines from the links*/
+    transition: 0.3 ease;       /*Smoothens hover that is time taken during hilightion on hover*/
+}
+
+#navbar li a:hover,
+#navbar li a.active{            /*Highlights the active tab*/
+    color: rgb(3, 123, 170);
+}
+
+/*inserting a line under the active tab*/
+#navbar li a.active::after,     /*To add the line for all tabs*/
+#navbar li a:hover::after   
+    {
+    content: "";                /*Always use content whenever u use ::after*/
+    width: 50%;                 /*Sets the width of the underline to 30% of the parent element's width*/
+    height: 4px;                /*Sets the height of the underline to 2 pixels.*/
+    background: rgb(3, 123, 170);
+    position: absolute;         /*Relative to main List class*/
+    bottom: 30px;               /*Moves the underline 30 pixels up from the bottom of the parent element, creating an overlap effect*/
+    left: 25px;                 /*Moves the underline 20 pixels to the right from the left edge of the parent element.*/
+    padding: none;
+}
+
+#hero {
+    background-image: url("image/design18.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: top 25% right 0;
+}

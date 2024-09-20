@@ -1,0 +1,48 @@
+/**
+ * lets say we want to add behavour to ur constructor that is a method getmake which is a fn which 
+ * returns make 
+ */
+function Person(name) {
+    this.name = name;
+   
+    } 
+    // In the constructor fn we have 2 methods which are common for all the objs  
+    // lets try to log one of the objects and see what will happen
+
+// let obj1 =  new Person("Munashe");
+// let obj2 = new Person("Gnashe")
+
+// console.log(obj1)
+/**what happens is when we are constructing a new object from a constructor, it is not juss copying 
+ * all the default properties buh also the behaviour 
+            getmake: [Function (anonymous)],
+            swithOn: [Function (anonymous)]
+    if we create 100 objs using this one constructor, all these behaviours will be common for all
+    100 objs and we can avod that buh we still want all these behaviours to all objs buh we want to
+    avoid those from being copied to all objs we have created, so we will add behaviour not in the 
+    constructor buh in the prototype its sort of encalpsulation
+    1st access the prototype by
+    <conName>.prototype.<propName>
+ */
+
+    Person.prototype.getname = function(){
+        return this.name
+    }
+
+    Person.prototype.swithOn = function(){
+        console.log("Device is swithced on")
+    }
+
+    let obj1 =  new Person("Munashe");
+    let obj2 = new Person("Gnashe")
+
+    // Instead of adding all the new behavours we need and we want it to be common for all objs 
+    // we need we need to add them to the prototype instead of the constructor fn itself
+    // if we run this, there will be no getmake nor switchOn buh it can be accessible by using obj
+    
+    console.log(obj1)
+    console.log(obj1.getname()) // we need to output this since it was returning a value
+    obj2.swithOn()
+
+    // these 2 behaviours arent part of constuctor buh are inside prototype
+    
