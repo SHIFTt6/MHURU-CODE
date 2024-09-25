@@ -10,17 +10,36 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 55px;
+    padding: 15px 10px;
+    padding-left: 40px;
+}
 
+.section-p1{
+    padding: 40px 80px;
+}
+
+#img1 {
+    width: 100%;
+    height: 100%;
+    padding: 90px 95px;
 }
 
 #header {
     display: flex ;
     align-items: flex-start;
     justify-content: space-between;
-    padding : 20px 20px;
+    padding : 25px 20px;
     box-shadow: 0 5px 15px rgb(70, 0, 0, 0.06);
-    height: 70px;
+    /* background-color: rgb(47, 190, 119); */
+    height: 80px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    background: radial-gradient(circle, #91bdb5 750%,rgba(0, 0, 0, 0) 100%);
+    background-position:center;
+    background-size: 100% 10%;
+    
 }
 
 #navbar {
@@ -37,11 +56,12 @@ body {
 
 /* Targeting the anchor tag*/
 #navbar li a{
-    color: rgb(3, 49, 53);
+    color: rgb(24, 7, 17);
     font-size: 25px;
     font-weight: 500px;
     text-decoration: none;      /*Remove undelines from the links*/
-    transition: 0.3 ease;       /*Smoothens hover that is time taken during hilightion on hover*/
+    transition: 0.3 ease;  
+    font-weight: bold     /*Smoothens hover that is time taken during hilightion on hover*/
 }
 
 #navbar li a:hover,
@@ -66,7 +86,47 @@ body {
 #hero {
     background-image: url("image/design18.png");
     background-size: cover;
-    height: 100vh;
-    width: 100%;
+    height: 90vh;
     background-position: top 25% right 0;
+    padding: 50px 110px 100px;
+}
+
+
+#hero h4{
+    font-size: 25px;
+    padding-top: 30px;
+    color: rgb(170, 140, 140);
+
+}
+
+
+#hero h2{
+    font-size: 45px;
+}
+
+
+#hero h1{
+    font-size: 60px;
+    color: rgb(250, 141, 141);
+}
+
+
+#hero p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#hero input[type="submit"]{
+    background-color: rgb(248, 239, 162);
+    border:0;
+    padding: 10px;
+}
+
+#hero input[value="Shop Now"]{
+    font-size: 20px;
+}
+
+#feature{
+    text-align: center;
+    padding: 5px;
 }

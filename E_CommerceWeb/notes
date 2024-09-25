@@ -70,4 +70,16 @@ header {
 position: absolute takes the header out of the normal document flow, allowing it to overlap with other elements.
 top: 0 and left: 0 position the header at the top-left corner of the screen.
 width: 100% sets the width of the header to the full width of the screen.
-height: 100vh sets the height of the header to the full height of the screen (or a fixed height, if you prefer). */ */
+height: 100vh sets the height of the header to the full height of the screen (or a fixed height, if you prefer). 
+
+In CSS, the z-index property is used to control the stacking order of elements along the z-axis (i.e., the axis perpendicular to the screen). It determines which element is displayed on top of another element when they overlap.
+
+Think of it like a layering system, where elements with a higher z-index value are displayed on top of elements with a lower z-index value.
+
+Here are some key uses of z-index:
+
+Overlapping elements: When two or more elements overlap, z-index determines which one is displayed on top. For example, if you have a dropdown menu that overlaps with a button, you can use z-index to ensure the menu appears on top of the button.
+Modal windows and overlays: z-index is essential for creating modal windows, overlays, and tooltips that appear on top of other elements.
+Navigation menus and dropdowns: z-index helps to ensure that navigation menus and dropdowns appear on top of other elements, even when they overlap.
+Layering and stacking: z-index allows you to create complex layering and stacking effects, such as creating a sense of depth or 3D-like effects.
+Fixing overlap issues: If you have elements that are overlapping unexpectedly, z-index can help you fix the issue by adjusting the stacking order.

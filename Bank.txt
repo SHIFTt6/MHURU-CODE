@@ -1,0 +1,5 @@
+Deposited 500.0 into John Doe
+Withdrew 200.0 from John Doe
+Deposited 800.0 into mhuru
+Withdrew 800.0 from mhuru
+Withdrew 67.0 from gfh
