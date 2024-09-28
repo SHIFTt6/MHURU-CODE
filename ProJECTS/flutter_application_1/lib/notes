@@ -1,0 +1,6 @@
+//Scaffold is a skeleton of an application
+
+argument: Widget            lower case and uppercase letter
+e.g home: Scaffold
+Appbar first bar at the top phone
+use one constant
