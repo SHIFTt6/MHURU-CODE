@@ -1,4 +1,5 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
-    "editor.fontFamily": "jetbrains mono nl"
+    "editor.fontFamily": "jetbrains mono nl",
+    "editor.fontSize": 14
 }
